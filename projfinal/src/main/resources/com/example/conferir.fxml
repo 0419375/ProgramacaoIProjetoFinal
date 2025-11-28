@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ConferirController">
+   <children>
+      <Label text="Confirme seu pedido" textAlignment="JUSTIFY">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="20.0" top="50.0" />
+         </VBox.margin>
+      </Label>
+      <TextArea fx:id="taPedido" editable="false" maxWidth="-Infinity" prefHeight="539.0" prefWidth="380.0" text="-teste">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+      <Button mnemonicParsing="false" onAction="#confirma" prefHeight="40.0" prefWidth="247.0" text="Confirmar">
+         <VBox.margin>
+            <Insets bottom="10.0" top="10.0" />
+         </VBox.margin>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#cancela" text="Cancelar" />
+   </children>
+</VBox>
