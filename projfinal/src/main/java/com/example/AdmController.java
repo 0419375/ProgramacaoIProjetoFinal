@@ -54,10 +54,11 @@ public class AdmController {
     public void updateConcluido(){
         taConcluido.clear();
         for (int i = 0; i < App.pedidos.size(); i++) {
-            if (App.pedidos.get(i).getStatus() == 1) {
+            if (App.pedidos.get(i).getStatus() > 1) {
                 taConcluido.setText(
                         String.format(taConcluido.getText() + "Pedido #" + App.pedidos.get(i).getPedidoId() + "\t%.2f\n", App.pedidos.get(i).calculaTotal()));
             }
         }
     }
 }
+
